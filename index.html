@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle">🌙</button>
+
+  <!-- Background Particles -->
+  <div id="particles-js"></div>
+
+  <header>
+    <h1 id="animated-text">Welcome to My 3D Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p id="typing-text"></p>
+    </section>
+
+    <section id="projects" data-aos="fade-left">
+      <h2>My Works</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Islamic Quiz</h3>
+          <p>A quiz app covering all aspects of Tawhid.</p>
+          <a href="https://midnightsou.github.io/quiz_app/" target="_blank" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Calculator App</h3>
+          <p>A simple web calculator for basic operations.</p>
+          <a href="https://midnightsou.github.io/calculator/" target="_blank" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Tic Tac Toe</h3>
+          <p>A two-player tic-tac-toe web game.</p>
+          <a href="https://github.com/Midnightsou/tic-tac-toe" target="_blank" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>To-Do List App</h3>
+          <p>A simple to-do list app for managing tasks.</p>
+          <a href="https://midnightsou.github.io/note-app/" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="form-status"></p>
+        </form>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> mukhtaradedapoemiola@gmail.com</p>
+          <p><strong>Phone:</strong> +234 9059378225</p>
+          <p><strong>Follow me:</strong></p>
+          <div class="social-icons">
+            <a href="https://github.com/Midnightsou" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/midnightsou" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mukhtar Emiola Adedapo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
